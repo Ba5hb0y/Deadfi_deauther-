@@ -48,13 +48,13 @@ exit
 echo -e $green2
 airmon-ng start wlan0 
 echo -e $white 
-echo " wlan0 in moniter mode "
+echo " wlan0 in monitor mode "
 ifconfig wlan0mon down
 echo " changing mac "
 echo -e $green2
 macchanger -r wlan0mon
 echo -e $white
-echo " mac changed now ur ur safe "
+echo " mac changed now ur safe "
 echo -e $green2
 ifconfig wlan0mon up
 fileName=$(date  --rfc-3339=seconds).csv
